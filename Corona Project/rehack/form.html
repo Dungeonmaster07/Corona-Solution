@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Covid-19 Probability Detector</title>
+    <style>
+      body{
+        background-image: url(images/coronavirus-statistics-on-screen-3970329.jpg);
+        background-size: cover;
+      }
+      .container h2{
+         color: #fff;
+      }
+    section{
+    padding: 3.9rem 0;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+}
+.nav{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav a{
+  color: #fff;
+}
+.form-group{
+  color: #fff;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-weight: bold;
+   background-color: white;
+   color: black;
+   text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <nav class="nav">
+                      <a href="index.html" class="nav-link active">Home</a>
+          </nav>
+      </div>
+  </header>
+      
+
+<!--Form-->
+    <form action="/" method="POST">
+        <div class="container"><h2 class="text-center mt-3">Corona Virus Detector</h2>
+        <div class="form-group">
+          <label for="fever">Enter fever value</label>
+          <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter fever value">
+        </div>
+        <div class="form-group">
+          <label for="age">Enter your Age</label>
+          <input type="text" class="form-control" id="age" name="age" placeholder="Enter age value">
+        </div>
+        <div class="form-group">
+          <label for="pain">Body Pain</label>
+          <select class="form-control" name="pain" id="pain">
+            <option>No Pain</option>
+            <option>Medium Pain</option>
+            <option>Severe Pain</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="runnyNose">Runny Nose</label>
+          <select class="form-control custom-select" id="runnyNose" name="runnyNose">
+            <option value="0">Yes</option>
+            <option value="1">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="diffBreath">Breathing Difficulty</label>
+          <select class="form-control custom-select" id="diffBreath" name="diffBreath">
+            <option value="-1">No Difficulty</option>
+            <option value="1">Little Difficulty</option>
+            <option value="1">Severe Difficulty</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-3 ">Submit</button>
+        </div>
+        
+      </form>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <p>Copyright @ Web Blasters</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

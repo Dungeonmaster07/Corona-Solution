@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*///////// bar//////////*/
+.main-nav{
+    float: right;
+    margin-top: 60px; 
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.mobile-icon{display: none;}
+
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+
+    .main-nav{display: none;}
+
+    .mobile-icon{ display: inline-block;
+        color: #fff;
+        margin-top: 10px;
+        margin-right:  20px;
+    }
+    .main-nav{float: left;}
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+
+
+}
+
+/*/////////// main header \\\\\\\\\*/ 
+.main_header{
+    height: 450px;
+    width: 100%;
+}
+.rightside h2{
+    font-size: 5rem;
+    margin-top: 100px;
+    text-align: center;
+    color: #33cccc;
+}
+.rightside .logo{
+    text-align: center;
+}
+.corona_rot img{
+    animation: gocorona 1s linear infinite;
+}
+#map{
+    width: 100%;
+    background: center;
+}
+@keyframes gocorona{
+    0%{ transform: rotate(0);}
+    100%{ transform: rotate(360deg);}
+
+}
+.leftside img{ 
+    animation: heartbeat 5s linear infinite;
+}
+@keyframes heartbeat{
+0%{
+    transform: scale(.75);
+}
+20%{
+    transform: scale(1);
+}
+40%{
+    transform: scale(.75);
+}
+60%{
+    transform: scale(1);
+}
+80%{
+    transform: scale(.75);
+}
+100%{
+    transform: scale(1);
+}
+}
+    </style>
+</head>
+<body onload="fetch()">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="images/imageedit_13_7657563763.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="index.html#symptomid" class="nav-link">Symptoms</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="googlemap.html" class="nav-link">World Map</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="index.html#aboutid" class="nav-link">About us</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="index.html#teamid" class="nav-link">Team</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="index.html#contactid" class="nav-link">Contact</a>
+                   </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
+    <div class ="rightside w-100 h-100 d-flex justify-content-center align-items-center">
+        <h2>Cor <span class="corona_rot"><img src="images/corona green.png" width="50" height="50"></span> na Virus Cases</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<iframe width="1024" height="576" src="https://app.developer.here.com/coronavirus/" frameborder="0" id="map"></iframe>
+</div>
+<script type ="text/javascript">
+    function slideshow(){
+            var x=document.getElementById('check-class');
+            if(x.style.display = "none"){
+                x.style.display="block";
+            }else{
+                x.style.display="none";
+            }
+            }
+        </script>
+</body>
+</html>

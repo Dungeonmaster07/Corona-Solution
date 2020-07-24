@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            background: #262626;
+        }
+        .text-area{
+            padding: 60px 0;
+        }
+        .section-heading{
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-family:cursive;
+            letter-spacing:5px;
+        }
+        .card{
+            border: none;
+            background: #fff;
+        }
+        .img-area{
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 10%;
+        }
+        .team-single:hover .side-two{
+            transform: rotateY(0deg);
+            border-radius: 5px;
+        }
+        .team-single:hover .side-one{
+            transform: rotateY(180deg);
+        }
+        .content-area{
+            transform: perspective(1000px);
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .side-one{
+            position: relative;
+            transform: rotateY(0deg);
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+        .side-two{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #fff;
+            transform: rotateY(-180deg);
+        }
+        .side-one,
+        .side-two{
+            backface-visibility: hidden;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+        .side-one .card,
+        .side-two .card{
+            min-height: 312px;
+        }
+        .side-two .card a{
+            font-size: 18px;
+            color: black;
+        }
+        h4{
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 5px;
+            font-size: 25px;
+        }
+        p{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo"><img src="images/imageedit_13_7657563763.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="text-area">
+        <div class="container">
+           <h3 class="section-heading">Team</h3>
+           <div class="row">
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="team-single">
+                       <div class="content-area">
+                           <div class="side-one">
+                               <div class="card">
+                                   <div class="card-body text-center">
+                                   <div class="img-area">
+                                       <img src="images/subham.jpg"width="130px" height="150px" alt="">
+                                    </div>
+                                       <h4>Subham</h4>
+                                       <h4>UI developer</h4>
+                                       <h4>Back-End developer</h4>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="side-two">
+                           <div class="card">
+                               <div class="card-body text-center mt-4">
+                                   <h4>subham</h4>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore saepe quisquam quibusdam sit laborum nulla error, quam blanditiis sunt facilis dolores harum voluptatem omnis tempora placeat quis odit fuga.</p>
+                                   <ul class="list-inline">
+                                       <li class="list-inline-item">
+                                           <a href="#" class="social-icon" target="_blank">
+                                               <i class="fa fa-facebook"></i>
+                                           </a>
+                                       </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="social-icon" target="_blank">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="social-icon" target="_blank">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                    </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div> 
+           <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="team-single">
+                <div class="content-area">
+                    <div class="side-one">
+                        <div class="card">
+                            <div class="card-body text-center">
+                            <div class="img-area">
+                                <img src="images/people-coffee-meeting-team-7096.jpg" width="130px" height="150px" alt="">
+                            </div>
+                                <h4>Team</h4>
+                                <h4>Web Blasters</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-two">
+                    <div class="card">
+                        <div class="card-body text-center mt-4">
+                            <h4>Web Blasters</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore saepe quisquam quibusdam sit laborum nulla error, quam blanditiis sunt facilis dolores harum voluptatem omnis tempora placeat quis odit fuga.</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                             <li class="list-inline-item">
+                                 <a href="#" class="social-icon" target="_blank">
+                                     <i class="fa fa-linkedin"></i>
+                                 </a>
+                             </li>
+                             <li class="list-inline-item">
+                                 <a href="#" class="social-icon" target="_blank">
+                                     <i class="fa fa-github"></i>
+                                 </a>
+                             </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="team-single">
+            <div class="content-area">
+                <div class="side-one">
+                    <div class="card">
+                        <div class="card-body text-center">
+                        <div class="img-area">
+                            <img src="images/muskan.jpg" width="130px" height="150px" alt="">
+                        </div>
+                            <h4>Muskan</h4>
+                            <h4>Front-end developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="side-two">
+                <div class="card">
+                    <div class="card-body text-center mt-4">
+                        <h4>Muskan</h4>
+                        <p>Seeking to obtain web developer position in a company and Looking to utilizing my skills and
+                            knowledge to be the best of my abilities and contribute positively for the growth of organization and
+                            Always Open to new thoughts and idea</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/profile.php?id=100009151191844" class="social-icon" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                         <li class="list-inline-item">
+                             <a href="https://www.linkedin.com/in/muskan-choudhury-34658a195/" class="social-icon" target="_blank">
+                                 <i class="fa fa-linkedin"></i>
+                             </a>
+                         </li>
+                         <li class="list-inline-item">
+                             <a href="https://github.com/Muskan0705" class="social-icon" target="_blank">
+                                 <i class="fa fa-github"></i>
+                             </a>
+                         </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+        </div>
+    </div>
+    </section>
+</body>
+    </html>
